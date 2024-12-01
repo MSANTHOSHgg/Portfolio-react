@@ -1,0 +1,37 @@
+.side-navbar {
+
+    opacity: 0.8;
+    background-color: #0e051b;
+    color: white;
+    text-align: left;
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    padding: 10px;
+    left: -60%;
+    transition: 1.5s;
+    z-index: 1;
+    top: 0px;
+}
+
+
+.side-navbar-Links {
+    margin-left: 15px;
+}
+
+.side-navbar-Link a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.side-navbar-Link a:hover {
+    color: tomato;
+    transition: color 0.3s ease;
+}
+
+.side-navbar-Link a.active {
+    color: #fc8064;
+    font-weight: bold;
+}

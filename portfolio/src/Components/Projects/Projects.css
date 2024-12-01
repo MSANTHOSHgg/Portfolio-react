@@ -1,0 +1,130 @@
+.projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.projects h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-button {
+    margin-top: 20px;
+    display: flex;
+    border-radius: 15px;
+}
+
+.projects-button input {
+    flex: 1;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    color: plum;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid purple;
+    background-color: #2a1051;
+}
+
+.projects-button input:hover {
+    background-color: #360f6b;
+}
+
+.projects-button input:focus {
+    background-color: #0e051b;
+}
+
+#web {
+    border-radius: 10px 0 0 10px;
+}
+
+#aca {
+    border-radius: 0 10px 10px 0;
+}
+
+
+.projects-website {
+    border-radius: 10px;
+    width: 80%;
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    background-color: rgb(22, 22, 47);
+    justify-content: space-around;
+}
+
+
+.website {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: purple;
+    flex-basis: 28%;
+    margin: 10px;
+}
+
+.website:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.website img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.website p {
+    width: 100%;
+    text-align: justify;
+
+}
+
+.website h5 {
+
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 4px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: purple;
+}
+
+.website h3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.website a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: plum;
+}
+
+.website a:hover {
+    text-decoration: underline;
+}
+
+.website:hover {
+    background-color: #2a1051;
+}
+
+.projects-academics {
+    border-radius: 10px;
+    width: 80%;
+    height: 70%;
+    padding: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    background-color: rgb(22, 22, 47);
+    justify-content: space-around;
+}

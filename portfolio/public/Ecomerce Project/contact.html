@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- <link res="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="Collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-toggle" onclick="shownav()">
+            <l class="fa-solid fa-bars"></l>
+        </div>
+
+    </nav>
+
+    <!-- side nav-bar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenav()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+    
+    <div class="sidenavbar-links">
+        <p class="sidenavbar-link"><a href="index.html">Home</a></p>
+        <p class="sidenavbar-link"><a href="Collection.html">Collections</a></p>
+        <p class="sidenavbar-link"><a href="contact.html">Contact</a></p>
+    </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact" id="concus" >
+        <div class="contactus" id="formcon">
+            
+            <h2 style="margin-bottom: 25px;">Contact Us</h2><br>
+            <p>Name:</p><br>
+            <input type="text"><br>
+            <p>Email:</p><br>
+            <input type="text"><br>
+            <p>Message:</p><br>
+            <textarea placeholder="type something here."></textarea><br>
+            <input type="button" class="sub" onclick="submit(event)" value="Submit">
+        </div>
+
+      </div>
+      <div>
+      <div class="feed">
+        <h2>Thankyou for your feedback</h2>
+      </div>
+    </div>
+
+        <!-- Footer -->
+         <div class="footer" >
+            <div class="footercontainer">
+                <div class="footerbox1">
+                <h2 class="headingtext">Nostra</h2>
+                <p>The standard chunk of Lorem ipsum dolor sit amet Ducimus accusamus nam nisi reiciendis deserunt iusto at illum cum cupiditate itaque nostrum, qui quo eum laboriosam rerum in. Ipsum asperiores, beatae quasi placeat impedit nisi porro quaerat assumenda reiciendis aut nulla. Doloremque obcaecati</p>
+                <div>
+                <l class="fa-brands fa-instagram" style="color: #ffffff;"></l>
+                <l class="fa-brands fa-twitter" style="color: #ffffff;"></l>
+                <l class="fa-brands fa-facebook" style="color: #ffffff;"></l>
+                </div>
+            </div>
+            </div>
+            <p>@2024 Nostra.com</p>
+         </div>
+
+         
+    <script>
+        var contact=document.querySelector(".contact")
+        var feedback=document.querySelector(".feed")
+        var btn=document.querySelector(".sub")
+        btn.addEventListener("click",function(){
+            event.preventDefault()
+            feedback.style.display="flex"
+            contact.style.display="none"
+        })
+        
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

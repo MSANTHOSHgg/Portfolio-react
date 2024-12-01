@@ -1,0 +1,273 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.navbar-links{
+    column-gap: 8px;
+    display: flex;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #10232C;
+    cursor: pointer;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+
+}
+.navbar-toggle{
+    display: none;
+}
+
+
+/* sidenavbar */
+ .side-navbar{
+    background-color: #10232C;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 56px;
+    left: -60%;
+    padding: 10px;
+    color: white;
+    transition: 1.5s;
+}
+
+.sidenavbar-link{ 
+    margin-bottom: 30px;
+}
+.sidenavbar-links a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.sidenavbar-links a:hover{
+    text-decoration: underline;
+}
+
+/* header */
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.headbtn{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #10232C;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.service{
+    padding: 20px;
+}
+.service-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.service-container2 div{
+    background-color: #F2F4F7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* newArrival */
+.newArrival{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    left: 10%;
+    padding-left: 20px;
+}
+.newArrivalContainer{
+    position: relative;
+    flex-basis: 20%;
+}
+.newArrivalContainer button{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10px;
+    color: #10232C;
+    top: 65%;
+    left: 10%;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+}
+
+.News{
+align-items: center;
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+}
+.News input{
+    padding: 10px;
+    width: 800px;
+    margin-bottom: 10px;
+    border: solid black 3px;
+    border-radius: 3px;
+}
+
+.News button{
+    margin-top: 10px;
+    color: #F2F4F7;
+    background-color: #10232C;
+    border-radius: 10px;
+
+    padding: 10px;
+}
+.footer{
+    margin-top: 20px;
+    background-color: #10232C;
+    color: #F2F4F7;
+    padding: 40px;
+}
+
+
+.productsec{
+    margin-top: 20px;
+}
+.productsearch{
+    width: 80%;
+    border-radius: 20px;
+    border: solid black 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.productsearch input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 25px;
+}
+.productsearch input:focus{
+    outline: none;
+}
+.productimg{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.productbox{
+    text-align: center;
+    flex-basis: 20%;
+}
+.productimg img{
+    width: 200px;
+    height: 300px;
+    border-radius: 5px
+}
+
+/* //media query for navbar-toggle */
+@media screen and (max-width:600px) {
+    .navbar-toggle{
+        display: block;
+    } 
+    .navbar-links{
+        display: none;
+    }
+    .headimg{
+        display: none;
+    }
+    .service-container1{
+        display: none;
+    }
+    .service-container2{
+        flex-direction: column;
+    }
+}
+
+/* Contact */
+.contact{
+    
+    color: #F2F4F7; 
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    z-index: 1;
+}
+.contact div{
+    background-color: #10232C;
+    padding: 30px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 60%;
+}
+.contactus input{
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+.contactus input:focus{
+    outline: none;
+}
+.contactus textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+.contactus textarea:focus{
+    outline: none;
+}
+.sub{
+    background-color: blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.feed {
+    background-color: #10232C;
+    color: #F2F4F7;
+    padding: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    left: 30%;
+    /* position: relative; */
+    border-radius: 10px;
+    z-index: 2;
+    margin-bottom: 25%;
+}

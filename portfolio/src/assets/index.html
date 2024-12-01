@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-Title">
+      <i class="fa-solid fa-layer-group"></i>
+      <p>Portfolio</p>
+    </div>
+    <div class="navbar-Links">
+      <p class="navbar-Link"><a href="#About">About</a></p>
+      <p class="navbar-Link"><a href="#Skills">Skills</a></p>
+      <p class="navbar-Link"><a href="#Education">Education</a></p>
+      <p class="navbar-Link"><a href="#Project">Projects</a></p>
+      <p class="navbar-Link"><a href="#footer">Contact</a></p>
+    </div>
+
+    <div class="navbar-toggle" onclick="shownav()">
+      <l class="fa-solid fa-bars"></l>
+    </div>
+  </nav>
+  <div class="side-navbar">
+    <p style="text-align: right;" onclick="closenav()">
+      <i class="fa-solid fa-xmark"></i>
+    </p>
+    <div class="side-navbar-Links">
+      <p class="side-navbar-Link"><a href="#About">About</a></p>
+      <p class="side-navbar-Link"><a href="#Skills">Skills</a></p>
+      <p class="side-navbar-Link"><a href="#Education">Education</a></p>
+      <p class="side-navbar-Link"><a href="#Project">Projects</a></p>
+      <p class="side-navbar-Link"><a href="#footer">Contact</a></p>
+    </div>
+  </div>
+  <br><br>
+  <br><br>
+  <section class="maincontent">
+    <section id="About">
+      <div class="About">
+        <div class="Iam">
+          <blockquote>
+            <h1>Hi, I am</h1>
+            <h1>Santhosh M</h1>
+          </blockquote>
+        </div>
+
+        <div class="container-auto">
+          <h2>I am a <span id="element"></span></h2>
+        </div>
+
+        <p>A skilled front-end developer with a strong Portfolio. Passionate about staying updated on front-end tech.
+          Colaborative and commited to quality, you thrive in dynamic teams. Eager to contribute creativity and bring
+          innovative ideas to life.</p>
+        <button class="Resume" onclick="window.open('assets/Santhosh-resume.pdf')">Check Resume</button>
+      </div>
+      <div class="photo">
+        <img src="assets/Photo sp.jpeg" alt="Santhosh M's Avatar">
+      </div>
+    </section>
+
+
+    <section id="Skills">
+      <div class="Skills">
+        <h1>Skills</h1>
+        <p class="skillinfo">Here are some of skills on which i have learnt</p>
+        <div class="Skill-box">
+          <div class="Front-end">
+            <h2 class="skill-title">Frontend</h2>
+            <div class="front">
+              <div>
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-js"></i>
+                <p>JavaScript</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-react"></i>
+                <p>React</p>
+              </div>
+            </div>
+          </div>
+          <div class="others">
+            <h2 class="skill-title">Others</h2>
+            <div class="other">
+              <div>
+                <i class="fa-brands fa-java"></i>
+                <p>Java</p>
+              </div>
+              <div>
+                <img src="assets/pegapng.png" style="width: 20px;height: 20px;">
+                <p>Pega</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Education">
+      <div class="Education">
+        <h1>Education</h1>
+      </div>
+      <div class="Education-timeline">
+        <div id="timeline">
+          <div class="tl-item">
+            <div class="tl-bg" style="background-image: url(assets/school.png)"></div>
+            <div class="tl-year">
+              <p class="f2 heading--sanSerif">2017-2018</p>
+            </div>
+            <div class="tl-content">
+              <h1>SSLC/10th</h1>
+              <h1>Periyar Centenary Memorial Matriculation Higher Secondary School, Trichy</h1>
+              <p>90.00%</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-bg" style="background-image: url(assets/school.png)"></div>
+            <div class="tl-year">
+              <p class="f2 heading--sanSerif">2019-2020</p>
+            </div>
+            <div class="tl-content">
+              <h1>HSC/12th</h1>
+              <h1 class="f3 text--accent ttu">Periyar Centenary Memorial Matriculation Higher Secondary School, Trichy
+              </h1>
+              <p>74.83%</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-bg" style="background-image: url(assets/College.webp)"></div>
+            <div class="tl-year">
+              <p class="f2 heading--sanSerif">2020-2024</p>
+            </div>
+            <div class="tl-content">
+              <h1>B.E</h1>
+              <h1 class="f3 text--accent ttu">M.Kumarasamy College Of Engineering, Karur</h1>
+              <p>85.37%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Education-container">
+        <div>
+          <div class="educationimg" style="background-image: url(assets/school.png)">
+            <div>
+              <p>2017-2018,2019-2020</p>
+              <h1>Periyar Centenary Memorial Matriculation Higher Secondary School, Trichy</h1>
+              <span>
+                <div>
+                  <h1>SSLC/10th</h1>
+                  <p>90%</p>
+                </div>
+                <div>
+                  <h1>HSC/12th</h1>
+                  <p>74.83%</p>
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="educationimg" style="background-image: url(assets/College.webp)">
+            <div>
+              <p>2020-2024</p>
+              <h1>B.E</h1>
+              <h1>M.Kumarasamy College Of Engineering, Karur</h1>
+              <p>85.37%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Project">
+      <div class="projects">
+        <div>
+          <h1>Projects</h1>
+          <p>I have worked on some projects. Here are some of my projects</p>
+        </div>
+        <div class="projects-button">
+          <input id="web" type="button" value="Website" onclick="Webproject()">
+          <input id="aca" type="button" value="Academic" onclick="Acaproject()">
+        </div>
+
+        <div class="projects-website">
+          <div class="website">
+            <img src="assets/WeatherApp/weatherapp.png">
+            <h5>React.js</h5>
+            <p></p>
+            <br>
+            <h3>Weather App</h3>
+            <p>2024</p>
+            <p>Weather app - built with React is a sleek, dynamic, and user-friendly interface that allows users to access real-time weather updates. The app typically integrates third-party APIs like OpenWeatherMap.</p>
+            <a href="https://weatherappusingreactsample.netlify.app/" style="position: relative;">View page</a>
+          </div>
+          <div class="website">
+            <img src="assets/StudentForm/sf.png">
+            <h5>HTML</h5>
+            <h5>CSS</h5>
+            <h5>JavaScript</h5>
+            <p></p>
+            <br>
+            <h3>Student Form</h3>
+            <p>2024</p>
+            <p>Student form page is used to add the details of student and to store it in another table also have option
+              to delete purticular row. This Student Form is developed by using HTML, CSS, JavaScript.</p>
+            <a href="assets/StudentForm/StudentForm.html" style="position: relative;">View page</a>
+          </div>
+          <div class="website">
+            <img src="assets/Ecomerce Project/Nostra.png">
+            <h5>HTML</h5>
+            <h5>CSS</h5>
+            <h5>JavaScript</h5>
+            <p></p>
+            <br>
+            <h3>Ecomerce</h3>
+            <p>2024</p>
+            <p>Nostra is a responsive ecomerce layout I created as a beginner frontend developer. This Ecomerce is
+              developed by using HTML, CSS, JavaScript.</p>
+            <a href="assets/Ecomerce Project/index.html" style="position: relative;">View page</a>
+          </div>
+        </div>
+        <div class="projects-academics">
+          <div class="website">
+            <img src="assets/A_P_1/Picture1.png">
+            <p></p>
+            <br>
+            <h3>Integrated automatic electricity billing system</h3>
+            <p>2023</p>
+            <p>The aim of this project is to measure and monitor the electricity consumed by consumers and to display
+              the
+              calculated readings through cloud app ‘blynk’. This project helps in reducing the malpractices and damages
+              of the meter.</p>
+          </div>
+          <div class="website">
+            <img src="assets/A_P_2/P2.png">
+
+            <p></p>
+            <br>
+            <h3>Analysing EEG patterns as predictors of physiological responses</h3>
+            <p>2024</p>
+            <p>This project endeavors to contribute to this burgeoning area by conducting a comprehensive analysis of
+              EEG
+              signals to predict physiological responses in a diverse range of scenarios.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <div class="footer-container">
+        <h1>Connect with me</h1>
+        <div class="footer-links">
+          <div class="footer-link">
+            <i class="fa-solid fa-envelope"></i><a href="mailto:santhoshmuthuselvanr@gmail.com" id="emailLink"
+              target="_blank"><p>Gmail</p></a>
+          </div>
+          <div class="footer-link">
+            <i class="fa-brands fa-linkedin-in"></i><a href="http://www.linkedin.com/in/santh%20osh-m-198790202"
+              target="_blank">LinkedIn</a>
+          </div>
+          <div class="footer-link">
+            <i class="fa-brands fa-github"></i><a href="https://github.com/MSANTHOSHgg" target="_blank">GitHub</a>
+          </div>
+          <div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

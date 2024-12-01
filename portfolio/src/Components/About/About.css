@@ -1,0 +1,81 @@
+.About {
+    width: 30%;
+    left: 10%;
+    margin-top: 40px;
+    position: relative;
+    text-align: justify;
+    display: inline-block;
+    font-size: 130%;
+}
+
+blockquote {
+
+    font-size: 20px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(35deg,
+            var(--color-primary),
+            var(--color-secondary));
+
+    p {
+        margin: 0;
+    }
+}
+
+:root {
+    --color-primary: hsl(310, 100%, 65%);
+    --color-secondary: hsl(160, 100%, 65%);
+    --background: hsl(230, 30%, 15%);
+    --text: hsl(310, 100%, 95%);
+}
+
+.container-auto {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    gap: 4px;
+}
+
+.container-auto span {
+    color: plum;
+}
+
+.About h1 {
+    font-size: 220%;
+}
+
+.About button {
+    margin-top: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(249, 106, 220), rgb(183, 43, 211));
+}
+
+.photo {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+}
+
+.photo img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: purple;
+}
+
+.Resume:hover {
+    background-image: linear-gradient(to right, rgb(183, 13, 149), rgb(131, 18, 153));
+}
+
+.Resume:focus {
+    background-image: linear-gradient(to right, rgb(183, 13, 149), rgb(131, 18, 153));
+}

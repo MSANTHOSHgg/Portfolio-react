@@ -1,0 +1,131 @@
+.Skills {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.skillinfo {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.Skill-box {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-title {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Front-end {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px;
+    width: 30%;
+    border-radius: 20px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+
+}
+
+.front {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+}
+
+.front div {
+    display: flex;
+    border-width: 2px;
+    border-style: solid;
+    border-color: purple;
+    padding: 2px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.front div:hover {
+    transform: scale(0.8);
+}
+
+.front i {
+    align-content: center;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.front p {
+    align-content: center;
+    margin-right: 5px;
+}
+
+.others {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.others h2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.other {
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.other div {
+    display: flex;
+    border-width: 2px;
+    border-style: solid;
+    border-color: purple;
+    padding: 2px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+
+}
+
+.other div:hover {
+    transform: scale(0.8);
+}
+
+.other i {
+    align-content: center;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.other img {
+    align-content: center;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.other p {
+    align-content: center;
+    margin-right: 5px;
+}
