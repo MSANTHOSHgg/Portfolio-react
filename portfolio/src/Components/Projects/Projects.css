@@ -46,7 +46,7 @@
 }
 
 
-.projects-website {
+.projects-website, .projects-academics  {
     border-radius: 10px;
     width: 80%;
     height: 70%;
@@ -62,6 +62,7 @@
 .website {
     padding: 20px;
     display: flex;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     border-radius: 10px;
     border-style: solid;
@@ -88,7 +89,6 @@
 }
 
 .website h5 {
-
     margin-top: 10px;
     margin-right: 5px;
     padding: 4px;
@@ -118,13 +118,77 @@
     background-color: #2a1051;
 }
 
-.projects-academics {
-    border-radius: 10px;
-    width: 80%;
-    height: 70%;
-    padding: 20px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    background-color: rgb(22, 22, 47);
-    justify-content: space-around;
+@media screen and (max-width:768px) {
+    .projects {
+        padding: 10px;
+      }
+    
+      .projects-button input {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+    
+      .website {
+        flex-basis: 100%;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+      }
+    
+      .website h5 {
+        font-size: 12px;
+      }
+    
+      .website h3 {
+        font-size: 15px;
+      }
+    
+      .website p {
+        font-size: 12px;
+      }
+    
+      .website a {
+        font-size: 14px;
+      }
+    
+      .website img {
+        width: 100%;
+        height: auto;
+      }
+}
+
+@media screen and (max-width:480px) {
+    .projects{
+        margin-top: 15px;
+      }
+      .projects p{
+        font-size: 12px;
+      }
+      .projects-button{
+        margin-top: 10px;
+      }
+      .projects-button input {
+        font-size: 14px;
+      }
+      .projects-website, .projects-academics{
+        margin-top: 8px;
+        padding: 8px;
+      }
+      .website h5 {
+        font-size: 10px;
+      }
+    
+      .website h3 {
+        font-size: 12px;
+        margin-top: -12px;
+      }
+    
+      .website p {
+        font-size: 10px;
+      }
+    
+      .website a {
+        font-size: 12px;
+      }
 }

@@ -1,7 +1,7 @@
 .About {
     width: 30%;
     left: 10%;
-    margin-top: 40px;
+    margin-top: 120px;
     position: relative;
     text-align: justify;
     display: inline-block;
@@ -44,6 +44,12 @@ blockquote {
     font-size: 220%;
 }
 
+.Resume {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .About button {
     margin-top: 50px;
     font-size: 20px;
@@ -55,6 +61,7 @@ blockquote {
     padding-right: 40px;
     color: white;
     background-image: linear-gradient(to right, rgb(249, 106, 220), rgb(183, 43, 211));
+    transition: background-image 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .photo {
@@ -72,10 +79,93 @@ blockquote {
     border-color: purple;
 }
 
-.Resume:hover {
-    background-image: linear-gradient(to right, rgb(183, 13, 149), rgb(131, 18, 153));
+.Resume a {
+    text-decoration: none;
+    color: #fff;
 }
 
-.Resume:focus {
+.Resume button:hover {
     background-image: linear-gradient(to right, rgb(183, 13, 149), rgb(131, 18, 153));
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:768px) {
+    .About {
+        width: 45%;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .About h1 {
+        font-size: 22px;
+    }
+
+    blockquote {
+        font-size: 12px;
+    }
+
+    .container-auto {
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .photo {
+        margin-top: -80px;
+        text-align: center;
+    }
+
+    .photo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .About p {
+        font-size: 16px;
+        margin-top: 70px;
+        width: 80vw;
+        text-align: justify;
+    }
+    .Resume{
+        width: 80vw;
+    }
+    .About button {
+        margin-top: 25px;
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .About {
+        max-width: 40%;
+    }
+
+    .About h1 {
+        font-size: 1rem;
+    }
+
+    blockquote {
+        font-size: 0.8rem;
+    }
+
+    .container-auto h2 {
+        font-size: 12px;
+    }
+
+    .photo img {
+        width: 28vw;
+        height: 20vh;
+    }
+
+    .About p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .About button {
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 6px 12px 6px 12px;
+    }
 }

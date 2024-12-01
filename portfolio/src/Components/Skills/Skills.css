@@ -24,60 +24,56 @@
     padding: 10px;
 }
 
-.Front-end {
+.Front-end ,.others{
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
     padding: 10px;
-    width: 30%;
+    width: 38%;
     border-radius: 20px;
     margin-right: 10px;
     flex-wrap: wrap;
 
 }
 
-.front {
+.front,.other {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    justify-content: space-between;
-
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.front div {
+.front div,.other div {
+    width: 120px;
+    height: 100px;
+    background-color: rgb(22, 22, 47);
+    border: 2px solid purple;
+    border-radius: 8px;
     display: flex;
-    border-width: 2px;
-    border-style: solid;
-    border-color: purple;
-    padding: 2px;
-    border-radius: 20px;
-    flex-wrap: wrap;
-    margin-top: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease; 
 }
 
-.front div:hover {
-    transform: scale(0.8);
+.front div span,.other div span {
+    font-size: 40px; 
+    /* color: #007bff;  */
+    color: #fff;
 }
 
-.front i {
-    align-content: center;
-    margin: 10px;
-    font-size: 25px;
+.front div p, .other div p {
+    margin-top: 5px; 
+    font-size: 16px; 
+    font-weight: bold;
+    color: #999; 
 }
 
-.front p {
-    align-content: center;
-    margin-right: 5px;
-}
-
-.others {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 10px;
-    width: 30%;
-    border-radius: 20px;
+.front div:hover, .other div:hover {
+  background-color: rgb(40, 40, 83);
+    transform: scale(1.05); 
 }
 
 .others h2 {
@@ -86,46 +82,85 @@
     padding: 10px;
 }
 
-.other {
-    flex-wrap: wrap;
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    justify-content: center;
-    gap: 5px;
-}
-
-.other div {
-    display: flex;
-    border-width: 2px;
-    border-style: solid;
-    border-color: purple;
-    padding: 2px;
-    border-radius: 20px;
-    flex-wrap: wrap;
-
-}
-
-.other div:hover {
-    transform: scale(0.8);
-}
-
-.other i {
+.other div img {
     align-content: center;
     margin: 10px;
-    font-size: 25px;
+    width: 45px;
+    height: 45px;
 }
 
-.other img {
-    align-content: center;
-    margin: 10px;
-    font-size: 25px;
+@media screen and (max-width:768px){
+    .Skill-box {
+        flex-direction: column;
+        gap: 15px;
+      }
+    
+      .front,
+      .other {
+        margin-top: 10px;
+        padding: 10px;
+      }
+    
+      .front div span,.other div span{
+        font-size: 30px;
+      }
+    
+      .Front-end,
+      .others {
+        width: 90%;
+        margin: 0 auto;
+      }    
+
+      .front div,.other div{
+        width: 100px;
+        height: 100px;
+      }
+      .other div img {
+        width: 35px;
+        height: 35px;
+    }
 }
 
-.other p {
-    align-content: center;
-    margin-right: 5px;
+@media screen and (max-width:480px){
+    .Skill-box {
+        gap: 10px;
+      }
+    
+      .Skills{
+        margin-top: 15px;
+      }
+      .skillinfo{
+        font-size: 12px;
+        margin-top: 10px;
+      margin-bottom: 10px;
+      }
+    
+      .Front-end{
+        padding: 2px;
+      }
+      .skill-title{
+        font-size: 14px;
+      }
+      .front{
+        justify-content: space-around;
+      }
+      .front div span,.other div span{
+        font-size: 20px;
+      }
+      .front div p, .other div p {
+        font-size: 8px;
+      }
+      
+      .others{
+        padding: 2px;
+      }
+
+      .front div,.other div{
+        width: 70px;
+        height: 70px;
+      }
+      .other div img{
+        width: 18px;
+        height: 18px;
+      }
 }

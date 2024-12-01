@@ -1,0 +1,89 @@
+.bodyTodolist{
+    margin: 0;
+    padding: 0;  
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    background-color: #999;
+    min-height: 100vh;
+}
+
+.clipLoader {
+    display: "flex";
+    justify-content: "center";
+    align-items: center;
+    margin-top: "2rem";
+}
+
+.container{
+    margin-top: 50px;
+    
+}
+.container h1{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.animation {
+    animation: fadeIn 2s ease-in-out, bounce 1s infinite;
+    font-size: 2rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .animation {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 20px;
+    }
+
+    .container h1 {
+        font-size: 1.2rem;
+    }
+
+    .animation {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .clipLoader {
+        margin-top: 1rem;
+    }
+
+    .animation {
+        font-size: 1rem;
+    }
+}

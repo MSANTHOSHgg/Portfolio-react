@@ -15,19 +15,19 @@ const Skills = () => {
                         <h2 className="skill-title">Frontend</h2>
                         <div className="front">
                             <div>
-                                <FontAwesomeIcon icon={faHtml5} />
+                                <span><FontAwesomeIcon icon={faHtml5} /></span>
                                 <p>HTML</p>
                             </div>
                             <div>
-                                <FontAwesomeIcon icon={faCss3Alt} />
+                                <span><FontAwesomeIcon icon={faCss3Alt} /></span>
                                 <p>CSS</p>
                             </div>
                             <div>
-                                <FontAwesomeIcon icon={faJs} />
+                                <span><FontAwesomeIcon icon={faJs} /></span>
                                 <p>JavaScript</p>
                             </div>
                             <div>
-                                <FontAwesomeIcon icon={faReact} />
+                                <span><FontAwesomeIcon icon={faReact} /></span>
                                 <p>React</p>
                             </div>
                         </div>
@@ -36,11 +36,11 @@ const Skills = () => {
                         <h2 className="skill-title">Others</h2>
                         <div className="other">
                             <div>
-                                <FontAwesomeIcon icon={faJava} />
+                                <span><FontAwesomeIcon icon={faJava} /></span>
                                 <p>Java</p>
                             </div>
                             <div>
-                                <img src={pegaimg} style={{ width: "20px", height: '20px' }} />
+                                <img src={pegaimg} />
                                 <p>Pega</p>
                             </div>
                         </div>

@@ -1,0 +1,142 @@
+.contact-us {
+  width: 75%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d5d5d5;
+}
+
+.contact-us .success-message {
+  color: green;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-us label {
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.contact-us input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-us textarea {
+  resize: vertical;
+}
+
+.contact-us input:focus,
+textarea:focus {
+  border-color: purple;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.contact-us .error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.submitbtn {
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitbtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+form button img {
+  width: 14px;
+  height: 14px;
+}
+
+.submitbtn:disabled {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #aaa; 
+  cursor: not-allowed; 
+}
+.submitbtn span {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.submitbtn span.loading {
+  opacity: 0.5; 
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    padding: 15px;
+  }
+  .contact-us h1{
+    font-size: 18px;
+  }
+  .contact-us label{
+    font-size: 14px;
+  }
+  .contact-us input,
+  textarea {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us {
+    width: 90%; 
+    padding: 10px;
+  }
+
+  .contact-us input,
+  textarea {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .submitbtn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

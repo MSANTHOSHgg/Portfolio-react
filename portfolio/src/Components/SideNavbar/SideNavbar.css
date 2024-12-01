@@ -5,7 +5,7 @@
     color: white;
     text-align: left;
     height: 100%;
-    width: 40%;
+    width: 50%;
     position: fixed;
     padding: 10px;
     left: -60%;
@@ -14,6 +14,9 @@
     top: 0px;
 }
 
+.side-navbar.open {
+    left: 0; 
+}
 
 .side-navbar-Links {
     margin-left: 15px;
@@ -35,3 +38,27 @@
     color: #fc8064;
     font-weight: bold;
 }
+
+@media screen and (max-width:768px) {
+    .side-navbar-Link a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .side-navbar-Link a {
+        font-size: 16px;
+    }
+
+    .side-navbar-Links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .side-navbar {
+      display: none;
+    }
+  }
