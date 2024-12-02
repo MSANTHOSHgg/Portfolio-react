@@ -16,6 +16,12 @@ app.use(bodyParser.json());
 const connectdb = require('./config/db');
 connectdb();
 
+//Local DataBase
+// mongoose
+//   .connect("mongodb://localhost:27017/PortfolioInformation")
+//   .then(() => console.log("Connected to MongoDB"))
+//   .catch((err) => console.error("Failed to connect to MongoDB:", err));
+
 const transporter = nodemailer.createTransport({
     service: 'Gmail',
     host: 'smtp.gmail.com',
