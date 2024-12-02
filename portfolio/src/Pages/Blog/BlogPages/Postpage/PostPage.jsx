@@ -52,7 +52,7 @@ const PostPage = () => {
     }
   };
 
-  if (!post) return <p>Loading...</p>;
+  if (!post) return <p></p>;
 
   return (
     <div className="postpage-container">
