@@ -71,7 +71,7 @@ textarea:focus {
   margin-top: 5px;
 }
 
-.submitbtn {
+.submitbtn2 {
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.4);
   color: white;
@@ -85,7 +85,7 @@ textarea:focus {
   justify-content: center;
 }
 
-.submitbtn:hover {
+.submitbtn2:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -94,16 +94,16 @@ form button img {
   height: 14px;
 }
 
-.submitbtn:disabled {
+.submitbtn2:disabled {
   background-color: rgba(255, 255, 255, 0.1);
   color: #aaa; 
   cursor: not-allowed; 
 }
-.submitbtn span {
+.submitbtn2 span {
   transition: opacity 0.2s ease-in-out;
 }
 
-.submitbtn span.loading {
+.submitbtn2 span.loading {
   opacity: 0.5; 
 }
 
@@ -135,7 +135,7 @@ form button img {
     font-size: 13px;
   }
 
-  .submitbtn {
+  .submitbtn2 {
     padding: 10px;
     font-size: 14px;
   }

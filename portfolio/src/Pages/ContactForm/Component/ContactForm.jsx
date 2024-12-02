@@ -165,7 +165,7 @@ const ContactUs = () => {
 
               </div>
               <div className='project-submitdiv'>
-                <button type="submit" className='submitbtn' disabled={loading}>{loading ? "Sending..." : <><img src={sendimg} alt="" className="sendicon" />Send Message</>}</button>
+                <button type="submit" className='project-submitbtn' disabled={loading}>{loading ? "Sending..." : <><img src={sendimg} alt="" className="sendicon" />Send Message</>}</button>
               </div>
             </form>
 

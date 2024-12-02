@@ -4,8 +4,6 @@ import axios from 'axios';
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
 import sendimg from '../../assets/send.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone,faEnvelope, } from '@fortawesome/free-solid-svg-icons';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +43,7 @@ const ContactUs = () => {
     if (Object.keys(formErrors).length === 0) {
       setLoading(true);
       try {
-        await axios.post('http://localhost:3001/newfeedbacks', formData);
+        await axios.post('http://localhost:3001/contactme', formData);
 
         toast.success('Message sent successfully!', {
           position: 'top-right',
@@ -79,21 +77,6 @@ const ContactUs = () => {
       setErrors(formErrors);
     }
   };
-
-  function copyToClipboard() {
-    const phoneNumber = document.getElementById("phoneNumber").innerText;
-    navigator.clipboard.writeText(phoneNumber)
-    toast.success("Phone number copied!", {
-      position: 'top-right',
-      autoClose: 2000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: false,
-      draggable: true,
-      theme: 'light',
-      transition: Slide,
-    });
-  }
 
   return (
     <div className="contact-us" id='Contact'>
@@ -141,7 +124,7 @@ const ContactUs = () => {
           
         </div>
 
-        <button type="submit" className='submitbtn' disabled={loading}>{loading ? "Sending..." : <><img src={sendimg} alt="" className="sendicon" />Send Message</>}</button>
+        <button type="submit" className='submitbtn2' disabled={loading}>{loading ? "Sending..." : <><img src={sendimg} alt="" className="sendicon" />Send Message</>}</button>
       </form>
 
       <ToastContainer />

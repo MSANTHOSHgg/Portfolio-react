@@ -3,9 +3,9 @@ import './PostForm.css'
 const PostForm = ({ formData, handleChange, handleSubmit }) => {
     return (
         <section>
-            <form onSubmit={handleSubmit} className="PostForm">
+            <form onSubmit={handleSubmit} className="project-PostForm">
                 <div>
-                    <div className="form-group">
+                    <div className="project-form-group">
                         <label>Title:</label>
                         <input
                             type="text"
@@ -16,7 +16,7 @@ const PostForm = ({ formData, handleChange, handleSubmit }) => {
                             placeholder="Title of your blog"
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="project-form-group">
                         <label>Summary:</label>
                         <input
                             type="text"
@@ -29,7 +29,7 @@ const PostForm = ({ formData, handleChange, handleSubmit }) => {
                             placeholder="Summary of your blog"
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="project-form-group">
                         <label>Content:</label>
                         <textarea
                             name="content"

@@ -8,6 +8,12 @@
     font-size: 130%;
 }
 
+.About-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 blockquote {
 
     font-size: 20px;
@@ -65,9 +71,11 @@ blockquote {
 }
 
 .photo {
-    position: absolute;
+    /* position: absolute;
     top: 25%;
-    right: 10%;
+    right: 10%; */
+    margin-top: 140px;
+    margin-right: 95px;
 }
 
 .photo img {
@@ -110,13 +118,13 @@ blockquote {
     }
 
     .photo {
-        margin-top: -80px;
-        text-align: center;
+        margin-top: 95px;
+        margin-right: 75px;
     }
 
     .photo img {
-        width: 180px;
-        height: 180px;
+        width: 25vw;
+        height: 15vh;
     }
 
     .About p {
@@ -125,9 +133,11 @@ blockquote {
         width: 80vw;
         text-align: justify;
     }
-    .Resume{
+
+    .Resume {
         width: 80vw;
     }
+
     .About button {
         margin-top: 25px;
         font-size: 16px;
@@ -153,9 +163,14 @@ blockquote {
         font-size: 12px;
     }
 
+    .photo {
+        margin-top: 75px;
+        margin-right: 45px;
+    }
+
     .photo img {
-        width: 28vw;
-        height: 20vh;
+        width: 25vw;
+        height: 15vh;
     }
 
     .About p {
@@ -167,5 +182,10 @@ blockquote {
         margin-top: 10px;
         font-size: 12px;
         padding: 6px 12px 6px 12px;
+    }
+
+    .photo {
+        top: 20%;
+        right: 10%;
     }
 }

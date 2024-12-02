@@ -4,6 +4,7 @@ import axios from "axios";
 import "./PostPage.css";
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Header from "../../components/Header/Header";
 
 const PostPage = () => {
   const { id } = useParams();
@@ -35,7 +36,7 @@ const PostPage = () => {
   const handleDelete = async () => {
     try {
       await axios.delete(`http://localhost:3001/delete/${id}`);
-      navigate("/");
+      navigate("/blog");
     } catch (err) {
       toast.error('An error occured', {
         position: 'top-right',
@@ -54,18 +55,21 @@ const PostPage = () => {
   if (!post) return <p>Loading...</p>;
 
   return (
+    <div className="postpage-container">
+      <Header/>
       <div className="post-page">
-      <h1>{post.title}</h1>
-      <h4>Summary: {post.summary}</h4>
-      <p>{post.content}</p>
-      <p><small>{new Date(post.publishedDate).toLocaleDateString()}</small></p>
-      <div className="btns">
-      <button onClick={() => navigate(`/edit/${id}`)}>Edit</button>
-      <button onClick={handleDelete}>Delete</button>
+        <h1>{post.title}</h1>
+        <h4>Summary: {post.summary}</h4>
+        <p>{post.content}</p>
+        <p><small>{new Date(post.publishedDate).toLocaleDateString()}</small></p>
+        <div className="btns">
+          <button onClick={() => navigate(`/edit/${id}`)}>Edit</button>
+          <button onClick={handleDelete}>Delete</button>
+        </div>
+        <ToastContainer />
       </div>
-      <ToastContainer/>
     </div>
-    );
+  );
 };
 
 export default PostPage;

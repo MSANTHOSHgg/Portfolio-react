@@ -7,7 +7,7 @@ import ContactUs from '../ContactUs/ContactUs';
 
 const Footer = () => {
     return (
-        <section className="footer" id="footer">
+        <section className="footer" id="Contact">
             <div className='footerContact'>
                 <div className="footer-container">
                     <h1>Connect with me</h1>

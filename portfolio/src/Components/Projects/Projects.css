@@ -62,19 +62,19 @@
 .website {
     padding: 20px;
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
     border-color: purple;
-    flex-basis: 28%;
+    flex-basis: 30%;
     margin: 10px;
 }
 
 .website:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
+    background-color: #2a1051;
 }
 
 .website img {
@@ -114,10 +114,49 @@
     text-decoration: underline;
 }
 
-.website:hover {
-    background-color: #2a1051;
+.academics {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: purple;
+  flex-basis: 45%;
+  margin: 10px;
 }
 
+.academics:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  background-color: #2a1051;
+}
+
+.academics img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.academics p {
+  width: 100%;
+  text-align: justify;
+
+}
+
+.academics h5 {
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 4px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: purple;
+}
+
+.academics h3 {
+  display: flex;
+  flex-wrap: wrap;
+}
 @media screen and (max-width:768px) {
     .projects {
         padding: 10px;
@@ -129,22 +168,22 @@
         font-size: 16px;
       }
     
-      .website {
+      .website ,.academics {
         flex-basis: 100%;
         width: 90%;
         margin: 10px auto;
         text-align: center;
       }
     
-      .website h5 {
+      .website h5,.academics h5 {
         font-size: 12px;
       }
     
-      .website h3 {
+      .website h3, .academics h3 {
         font-size: 15px;
       }
     
-      .website p {
+      .website p, .academics p {
         font-size: 12px;
       }
     
@@ -152,7 +191,7 @@
         font-size: 14px;
       }
     
-      .website img {
+      .website img,.academics img {
         width: 100%;
         height: auto;
       }
@@ -175,16 +214,16 @@
         margin-top: 8px;
         padding: 8px;
       }
-      .website h5 {
+      .website h5,.academics h5 {
         font-size: 10px;
       }
     
-      .website h3 {
+      .website h3,.academics h3 {
         font-size: 12px;
         margin-top: -12px;
       }
     
-      .website p {
+      .website p,.academics p {
         font-size: 10px;
       }
     

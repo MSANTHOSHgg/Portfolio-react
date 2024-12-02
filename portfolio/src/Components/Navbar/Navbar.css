@@ -6,6 +6,7 @@
     background-color: #2a0c56;
     color: white;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1;
 }
@@ -41,10 +42,10 @@
     transition: color 0.3s ease;
 }
 
-.navbar-Link a.active {
-    color: #fc8064;
+.navbar-Link.active a {
+    color: tomato;
     font-weight: bold;
-}
+  }
 
 .navbar-toggle {
     display: none;

@@ -43,7 +43,7 @@ const CreateEditPost = () => {
             } else {
                 await axios.post("http://localhost:3001/posts", formData);
             }
-            navigate("/");
+            navigate("/blog");
         } catch (err) {
             toast.error('Try again', {
                 position: 'top-right',
